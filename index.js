@@ -9,7 +9,7 @@ function retrieveEntries() {
 
 function displayEntries() {
   const tableEntries = userEntries
-    .map(({ name, email, password, dob, acceptTerms }) => `
+    .map(({ name, email, password, dob, acceptTerms }) => 
       <tr>
         <td class="border px-4 py-2">${name}</td>
         <td class="border px-4 py-2">${email}</td>
@@ -17,9 +17,9 @@ function displayEntries() {
         <td class="border px-4 py-2">${dob}</td>
         <td class="border px-4 py-2">${acceptTerms}</td>
       </tr>
-    `)
+    )
     .join("\n");
-  const table = `
+  const table = 
     <table class="table-auto w-full">
       <thead>
         <tr>
@@ -34,7 +34,7 @@ function displayEntries() {
         ${tableEntries}
       </tbody>
     </table>
-  `;
+  ;
 
   details.innerHTML = table;
 }
@@ -71,3 +71,4 @@ function saveUserForm(event) {
 
 userForm.addEventListener("submit", saveUserForm);
 displayEntries();
+
