@@ -34,7 +34,7 @@ function displayEntries() {
         ${tableEntries}
       </tbody>
     </table>
-
+  ;
 
   details.innerHTML = table;
 }
@@ -71,3 +71,4 @@ function saveUserForm(event) {
 
 userForm.addEventListener("submit", saveUserForm);
 displayEntries();
+
