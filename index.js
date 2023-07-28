@@ -34,7 +34,7 @@ function displayEntries() {
         ${tableEntries}
       </tbody>
     </table>
-  ;
+
 
   details.innerHTML = table;
 }
